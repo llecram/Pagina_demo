@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+        <script src="three.js">
+          
+        </script>
+
+        <style>
+              body {
+                /*background-color: #5F9EA0	;*/
+                background-image: url("mask.jpg");
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+              .card { background-color: rgba(245, 245, 245, 0); }
+              .card-header, .card-footer { opacity: 2}
+              .card-text, .card-title{
+                color: green;
+              }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+          <div class="row text-center">
+              <div class="col">
+                
+              </div>
+              <script>
+                  var scene = new THREE.Scene();
+                  var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+                  var renderer = new THREE.WebGLRenderer();
+                  renderer.setSize( window.innerWidth*0.3, window.innerHeight*0.3 );
+                  document.body.appendChild( renderer.domElement );
+
+                  var geometry = new THREE.BoxGeometry( 1, 1.2, 1 );
+                  var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+                  var cube = new THREE.Mesh( geometry, material );
+                  scene.add( cube );
+
+                  camera.position.z = 5;
+
+                  function animate() {
+                      requestAnimationFrame( animate );
+                      renderer.render( scene, camera );
+                      cube.rotation.x += 0.01;
+                      cube.rotation.y += 0.01;
+                  }
+                  animate();
+              </script>
+            
+          </div>
+      </div>
+
+            <div class="container-fluid">
+              
+                    <!-- 
+                      > Jumbotron Header <
+                    <header class="jumbotron my-4">
+                      <h1 class="display-3">  </h1>
+                      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+                      <a href="#" class="btn btn-primary btn-lg">Ver mas</a>
+                    </header>
+                    -->
+                
+                    <!-- Page Features -->
+                    <div class="row text-center">
+                
+                      <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                          <img class="card-img-top" src="img_scale/scale_3.png" alt="">
+                          <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+                          </div>
+                          <div class="card-footer">
+                            <a href="#" class="btn btn-primary">buy</a>
+                          </div>
+                        </div>
+                      </div>
+                
+                      <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                          <img class="card-img-top" src="img_scale/scale_1.jpg" alt="">
+                          <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+                          </div>
+                          <div class="card-footer">
+                            <a href="#" class="btn btn-primary">buy</a>
+                          </div>
+                        </div>
+                      </div>
+                
+                      <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                          <img class="card-img-top" src="img_scale/scale_2.jpg" alt="">
+                          <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+                          </div>
+                          <div class="card-footer">
+                            <a href="#" class="btn btn-primary">buy</a>
+                          </div>
+                        </div>
+                      </div>
+                
+                      <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                          <img class="card-img-top" src="img_scale/scale_3.jpg" alt="">
+                          <div class="ca activerd-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+                          </div>
+                          <div class="card-footer">
+                            <a href="#" class="btn btn-primary">buy</a>
+                          </div>
+                        </div>
+                      </div>
+                
+                    </div>
+                    <!-- /.row -->
+                
+                    <div class="row text-center">
+                
+                      <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                          <img class="card-img-top" src="img_scale/scale_3.png" alt="">
+                          <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+                          </div>
+                          <div class="card-footer">
+                            <a href="#" class="btn btn-primary">buy</a>
+                          </div>
+                        </div>
+                      </div>
+                
+                      <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                          <img class="card-img-top" src="img_scale/scale_1.jpg" alt="">
+                          <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+                          </div>
+                          <div class="card-footer">
+                            <a href="#" class="btn btn-primary">buy</a>
+                          </div>
+                        </div>
+                      </div>
+                
+                      <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                          <img class="card-img-top" src="img_scale/scale_2.jpg" alt="">
+                          <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+                          </div>
+                          <div class="card-footer">
+                            <a href="#" class="btn btn-primary">buy</a>
+                          </div>
+                        </div>
+                      </div>
+                
+
+                
+                    </div>
+                    <!-- /.row -->
+                  </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img style= "width: 25%; height: 75%" src="img_scale/scale_1.jpg" alt="image responsive">
+                </div>  
+                <div class="col">
+                    <img style= "width: 25%; height: 75%"  src="img_scale/scale_2.jpg" alt="image responsive">
+                </div>
+                <div class="col">
+                    <img style= "width: 25%; height: 75%" src="img_scale/scale_3.jpg" alt="image responsive">  
+                </div>  
+            </div>
+        </div>
+    </body>
+</html>
